@@ -19,8 +19,12 @@
 
 <%= render 'home/header' %>
 <div class="container">
+  <br/>
+<% if notice %>
+  <%= render 'layouts/alerts' %>
+    <% end %>
 
-<br>
+<br/>
 <%= yield %>
 <!--<h3>Created by John Brooks</h3>-->
 </div>
