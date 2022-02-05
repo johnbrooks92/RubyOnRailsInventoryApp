@@ -6,6 +6,7 @@
     <th>Quantity</th>
     <th>Costs</th>
     <th>Shelf Life in Days</th>
+    <th>Information</th>
   </tr>
   </thead>
 
@@ -16,7 +17,7 @@
   <td><%= product.cost %></td>
   <td><%= product.shelf_life_in_days %></td>
 
-    <td><%= link_to 'View', product, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-success btn-sm" %>
+    <td><%= link_to 'View', product, class: "btn btn-success btn-sm" %>
 
   </tr>
   </tbody>
